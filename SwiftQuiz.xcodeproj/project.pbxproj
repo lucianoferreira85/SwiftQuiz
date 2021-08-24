@@ -13,6 +13,10 @@
 		F648D8F526CF3F9400DE295D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F648D8F326CF3F9400DE295D /* Main.storyboard */; };
 		F648D8F726CF3F9700DE295D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F648D8F626CF3F9700DE295D /* Assets.xcassets */; };
 		F648D8FA26CF3F9700DE295D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F648D8F826CF3F9700DE295D /* LaunchScreen.storyboard */; };
+		F648D90226D1AC9C00DE295D /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648D90126D1AC9C00DE295D /* QuizViewController.swift */; };
+		F648D90426D1ACB200DE295D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648D90326D1ACB200DE295D /* ResultViewController.swift */; };
+		F648D90826D3B7E100DE295D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648D90726D3B7E100DE295D /* Quiz.swift */; };
+		F648D90A26D3B80700DE295D /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648D90926D3B80700DE295D /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F648D8F626CF3F9700DE295D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F648D8F926CF3F9700DE295D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F648D8FB26CF3F9700DE295D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F648D90126D1AC9C00DE295D /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		F648D90326D1ACB200DE295D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		F648D90726D3B7E100DE295D /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		F648D90926D3B80700DE295D /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				F648D8EF26CF3F9400DE295D /* SceneDelegate.swift */,
 				F648D8F126CF3F9400DE295D /* ViewController.swift */,
 				F648D8F326CF3F9400DE295D /* Main.storyboard */,
+				F648D90726D3B7E100DE295D /* Quiz.swift */,
+				F648D90926D3B80700DE295D /* QuizManager.swift */,
+				F648D90126D1AC9C00DE295D /* QuizViewController.swift */,
+				F648D90326D1ACB200DE295D /* ResultViewController.swift */,
 				F648D8F626CF3F9700DE295D /* Assets.xcassets */,
 				F648D8F826CF3F9700DE295D /* LaunchScreen.storyboard */,
 				F648D8FB26CF3F9700DE295D /* Info.plist */,
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F648D90426D1ACB200DE295D /* ResultViewController.swift in Sources */,
 				F648D8F226CF3F9400DE295D /* ViewController.swift in Sources */,
+				F648D90826D3B7E100DE295D /* Quiz.swift in Sources */,
+				F648D90A26D3B80700DE295D /* QuizManager.swift in Sources */,
 				F648D8EE26CF3F9400DE295D /* AppDelegate.swift in Sources */,
 				F648D8F026CF3F9400DE295D /* SceneDelegate.swift in Sources */,
+				F648D90226D1AC9C00DE295D /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucianoferreira.SwiftQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucianoferreira.SwiftQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

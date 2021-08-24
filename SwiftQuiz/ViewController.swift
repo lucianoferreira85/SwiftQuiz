@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btStart(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let vc = storyboard.instantiateViewController(withIdentifier: "QuizViewControllerIdentify") ; // MySecondSecreen the storyboard ID
+        self.present(vc, animated: true, completion: nil);
+    }
+    
 }
 
